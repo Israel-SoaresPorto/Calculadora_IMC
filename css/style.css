@@ -1,0 +1,126 @@
+body {
+    background: lightcyan;
+    height: 100vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.central {
+    width: 80%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 100px;
+}
+
+.central img {
+    width: 25%;
+}
+
+.formulario {
+    width: 40%;
+    height: 500px;
+    padding: 20px;;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.formulario p {
+    font-size: 20px;
+}
+
+.formulario input {
+    width: 75%;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(175, 178, 185);
+    border: none;
+    outline: none;
+    border-radius: 20px;
+}
+
+.formulario input:focus {
+    background: rgb(135, 216, 244);
+}
+
+.formulario button {
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    background-color: rgb(175, 178, 185);
+    font-size: 100%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background-color: rgb(135, 216, 244);
+}
+
+/* ajustando o layout para dispositivos móveis */
+@media screen and (max-device-width: 500px) {
+    .central {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .central img {
+        width: 50%;
+    }
+
+    .formulario {
+        width: 80%;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .formulario h2 {
+        font-size: 20px;
+    }
+    
+    .formulario p {
+        font-size: 17px;
+    }
+
+    .formulario input {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .formulario button {
+        width: 50%;
+        padding: 10px;
+        margin-top: 20px;
+        margin-bottom: 8px;
+    }
+}
+
+.magreza {
+    color: blue;
+}
+
+.peso-normal {
+    color: rgb(234, 223, 4);
+}
+
+.acima-do-peso {
+    color: orange;
+}
+
+.obesidade {
+    color: red;
+}
